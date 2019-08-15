@@ -5,7 +5,7 @@ import autoprefixer from 'autoprefixer';
 
 gulp.task('clean', () => del(['assets/css/acf-flexible-content-preview.css']));
 
-gulp.task('sass', () => gulp.src('src/acf-flexible-content-preview.scss')
+gulp.task('sass', () => gulp.src('assets/scss/acf-flexible-content-preview.scss')
   .pipe($.sass({
     outputStyle: 'expanded',
     errLogToConsole: true

@@ -8,7 +8,7 @@ composer.lock
 vendor/
 LICENSE.md
 README.md
-src/
+assets/scss
 node_modules
 package.json
 yarn.lock
