@@ -1,0 +1,22 @@
+{
+  "name": "acf-flexible-content-preview",
+  "version": "1.0.0",
+  "description": "Transforms ACF's flexible content field's layout list into a modal with image previews.",
+  "keywords": [
+    "ACF",
+    "Flexible Content Field",
+    "Flexible Content Field Preview"
+  ],
+  "homepage": "https://github.com/jameelmoses/acf-flexible-content-preview",
+  "authors": [{
+    "name": "Jameel Moses",
+    "email": "hello@jameelmoses.com",
+    "homepage": "https://github.com/jameelmoses"
+  }],
+  "type": "wordpress-plugin",
+  "minimum-stability": "stable",
+  "license": "GPL-3.0+",
+  "require": {
+    "php": ">=5.6.0"
+  }
+}
