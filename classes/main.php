@@ -27,7 +27,7 @@ class Main {
 		$css = "\n<style>";
 		$css .= "\n\t /** Advanced Custom Fields: Flexible Content Preview : dynamic images */";
 		foreach ( $images as $layout_key => $image_url ) {
-			$css .= sprintf( "\n\t .acf-fc-popup ul li a[data-layout=%s]{ background-image: url(\"%s\"); }", $layout_key, $image_url );
+			$css .= sprintf( "\n\t .acf-fc-popup ul li a[data-layout=%s] .acf-fc-popup-image { background-image: url(\"%s\"); }", $layout_key, $image_url );
 		}
 		$css .= "\n</style>\n";
 

@@ -16,7 +16,7 @@ $(document).ready(function($) {
 $('body').on('click', 'a[data-name="add-layout"]', function() {
   setTimeout(function() {
     $('.acf-fc-popup a').each(function() {
-      var html = '<div>' + $(this).text() + '</div>';
+      var html = '<div class="acf-fc-popup-label">' + $(this).text() + '</div><div class="acf-fc-popup-image"></div>';
       $(this).html(html);
     });
   }, 0);
