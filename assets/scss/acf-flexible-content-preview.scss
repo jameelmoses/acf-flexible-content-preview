@@ -53,8 +53,9 @@
       a {
         display: block;
         height: 150px;
-        background-position: center;
-        background-size: cover;
+        background-position: center !important;
+        background-repeat: round !important;
+        background-size: cover !important;
         border: 1px solid #ddd;
         transition: .2s ease-in-out;
 
