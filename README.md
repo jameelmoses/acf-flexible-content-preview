@@ -9,13 +9,15 @@ Transforms ACF's flexible content field's layout list into a modal with image pr
 
 ## Image Location
 
-Images should be placed in your theme. Be fault, images are located here: `lib/admin/images/acf-flexible-content-preview`.
+Images should be placed in your theme. Be fault, images are located here: `THEME/lib/admin/images/acf-flexible-content-preview`.
 
-Also note that you can filter this path:
+Also note that you can filter this path, but it **MUST** be in your theme:
 
 `add_filter( 'acf-flexible-content-preview.images_path', $path );`
 
-Finally, you could filter all images like this:
+**NOTE:** The path should not have a trailing beginning or trailing slash!
+
+Additionally, you could filter all keys and/or images:
 
 `add_filter( 'acf-flexible-content-preview.images', $images );`
 

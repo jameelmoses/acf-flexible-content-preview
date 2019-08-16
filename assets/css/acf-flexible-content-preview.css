@@ -53,44 +53,29 @@
 }
 
 .acf-fc-popup ul li a {
-  width: 100%;
+  display: block;
   height: 150px;
-  background-repeat: round;
+  background-position: center;
+  background-size: cover;
   border: 1px solid #ddd;
+  transition: .2s ease-in-out;
 }
 
-.acf-fc-popup ul li a i {
-  font-size: 22px;
-  vertical-align: text-top;
-  margin-right: 10px;
+.acf-fc-popup ul li a:hover, .acf-fc-popup ul li a:focus, .acf-fc-popup ul li a:active {
+  box-shadow: inset 0 0 0 4px #1699d5;
 }
 
-.acf-fc-popup a {
-  color: #fff;
-  font-size: 18px;
-  padding: 10px 12px;
-}
-
-.acf-fc-popup a:hover, .acf-fc-popup a:focus, .acf-fc-popup a:active {
-  background-repeat: round;
-  box-shadow: 3px 3px 2px 1px rgba(87, 87, 88, 0.1);
-}
-
-.acf-fc-popup div {
+.acf-fc-popup ul li a div {
   position: absolute;
+  top: 10px;
+  left: 12px;
   background-color: white;
   color: black;
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.acf-fc-popup div + .acf-fc-popup a:hover,
-.acf-fc-popup div + .acf-fc-popup a:focus,
-.acf-fc-popup div + .acf-fc-popup a:active {
-  color: #eee;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width: 960px) {

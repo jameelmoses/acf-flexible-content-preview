@@ -88,7 +88,7 @@ class Main {
 		/**
 		 * Allow to add/remove/change a flexible layout key
 		 *
-		 * @params array $layouts_images : Array of flexible layout's keys with associated image url
+		 * @params array $layouts_images : Array of flexible content field layout's keys with associated image url
 		 *
 		 * @return array
 		 */
@@ -119,19 +119,15 @@ class Main {
 		// Rework the tpl
 		$layout = str_replace( '_', '-', $layout );
 
-		$image = $path . $layout . '.jpg';
+		$image_path = get_stylesheet_directory() . '/' . $path . '/' . $layout . '.jpg';
+		$image_uri = get_stylesheet_directory_uri() . '/' . $path . '/' . $layout . '.jpg';
 
 		// Direct path to custom folder
-		if ( is_file( $image ) ) {
-			return $image;
+		if ( is_file( $image_path ) ) {
+			return $image_uri;
 		}
 
-		// Partial path to check into themes
-		if ( is_file( get_theme_file_path( $image ) ) ) {
-			return get_theme_file_uri( $image );
-		}
-
-		return FCP_URL . 'assets/images/default.png';
+		return FCP_URL . 'assets/images/default.jpg';
 	}
 
 	/**
