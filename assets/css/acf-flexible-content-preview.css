@@ -3,14 +3,21 @@
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;
-  width: 80%;
-  height: 80%;
+  width: 95%;
+  height: 88%;
   max-width: 1200px;
   max-height: 1200px;
   background: none !important;
   padding: 0;
   border-radius: 0;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 783px) {
+  .acf-fc-popup .acf-fc-popup {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .acf-fc-popup * {
@@ -36,28 +43,30 @@
 }
 
 .acf-fc-popup ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
   position: relative;
   width: 100%;
   height: 100%;
   background: #f4f4f4;
-  padding: 15px;
+  padding: 10px 0;
   border: #ccc;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   overflow: auto;
 }
 
-.acf-fc-popup ul::after {
-  content: '';
-  display: block;
-  float: left;
-  width: 100%;
-  height: 10px;
+.acf-fc-popup ul li {
+  width: 264px;
+  max-width: 100%;
+  padding: 10px;
 }
 
-.acf-fc-popup ul li {
-  float: left;
-  width: calc(100% / 3);
-  padding: 1%;
+@media only screen and (min-width: 400px) {
+  .acf-fc-popup ul li {
+    width: 386px;
+  }
 }
 
 .acf-fc-popup ul li a {
@@ -91,24 +100,14 @@
 }
 
 .acf-fc-popup ul li a .acf-fc-popup-image {
-  height: 150px;
+  height: 100px;
   background-position: center !important;
   background-repeat: round !important;
   background-size: cover !important;
 }
 
-@media only screen and (max-width: 960px) {
-  .acf-fc-popup ul li {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 782px) {
-  .acf-fc-popup {
-    width: 95%;
-    height: 88%;
-  }
-  .acf-fc-popup ul li {
-    width: 100%;
+@media only screen and (min-width: 400px) {
+  .acf-fc-popup ul li a .acf-fc-popup-image {
+    height: 150px;
   }
 }
