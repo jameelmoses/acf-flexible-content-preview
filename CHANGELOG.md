@@ -1,4 +1,4 @@
 # Changelog ##
 
-## 1.0.0 - 15 Aug 2019
-* Initial commit
+## 1.0.0 - 16 Aug 2019
+* Initial release

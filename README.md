@@ -1,10 +1,12 @@
+[![Banner](.wordpress.org/banner-1544x500.jpg)](#)
+
 # Advanced Custom Fields: Flexible Content Preview
 
 Transforms ACF's flexible content field's layout list into a modal with image previews.
 
-[![Screenshot](assets/images/screenshot.jpg)](#)
+[![Screenshot](.wordpress.org/screenshot-1.jpg)](#)
 
-## Image convention
+## Image Conventions
 
 * The size of the image should be 732 x 300.
 * They should be named based on the layout's name (`text_block`) with underscores converted to dashes (`text-block.jpg`).
@@ -25,8 +27,9 @@ Additionally, you could filter all keys and/or images:
 
 # Requirements
 
-- [ACF Pro](https://www.advancedcustomfields.com/) plugin
+- [ACF Pro >= 5.7.O](https://www.advancedcustomfields.com/) plugin
 - WordPress 4.7+ because of `[get_theme_file_uri()](https://developer.wordpress.org/reference/functions/get_theme_file_uri)`
+- PHP 5.6+
 
 # Installation
 
