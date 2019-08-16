@@ -2,6 +2,8 @@
 
 Transforms ACF's flexible content field's layout list into a modal with image previews.
 
+![Screenshot](assets/images/screenshot.jpg)
+
 ## Image convention
 
 * The size of the image should be 732 x 300.
