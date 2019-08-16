@@ -4,7 +4,7 @@ Transforms ACF's flexible content field's layout list into a modal with image pr
 
 ## Image convention
 
-* The size of image should be 366 x 150 or bigger 732 x 300.
+* The size of image should be 732 x 300.
 * They should be named based on the layout's name (`text_block`) with no underscores but dashes (`text-block.jpg`).
 
 ## Image Location
