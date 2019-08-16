@@ -36,9 +36,13 @@ Finally, you could filter all images like this:
 
 Please refer to the [contributing guidelines](.github/CONTRIBUTING.md) to increase the chance of your pull request to be merged and/or receive the best support for your issue.
 
-### Issues & features request / proposal
+### Issues & Feature Requests
 
 If you identify any errors or have an idea for improving the plugin, feel free to open an [issue](../../issues/new) or [create a pull request](../../compare). Please provide as much info as needed in order to help us resolving / approve your request.
+
+## Credit
+
+Credit largely goes to @BeAPI for their [bea-beautiful-flexible](https://github.com/BeAPI/bea-beautiful-flexible) plugin. This plugin began using their plugin as a starting point.
 
 ## License
 
