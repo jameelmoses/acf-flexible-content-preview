@@ -58,12 +58,12 @@
   background-position: center !important;
   background-repeat: round !important;
   background-size: cover !important;
-  border: 1px solid #ddd;
+  box-shadow: inset 0 0 0 1px #ddd;
   transition: .2s ease-in-out;
 }
 
 .acf-fc-popup ul li a:hover, .acf-fc-popup ul li a:focus, .acf-fc-popup ul li a:active {
-  box-shadow: inset 0 0 0 4px #1699d5;
+  box-shadow: 0 10px 16px -6px #777;
 }
 
 .acf-fc-popup ul li a div {
