@@ -2,7 +2,7 @@
 
 Transforms ACF's flexible content field's layout list into a modal with image previews.
 
-![Screenshot](assets/images/screenshot.jpg)[]()
+[![Screenshot](assets/images/screenshot.jpg)](#)
 
 ## Image convention
 
