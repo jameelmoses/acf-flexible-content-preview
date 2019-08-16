@@ -1,5 +1,3 @@
-[![Banner](.wordpress.org/banner-1544x500.jpg)](#)
-
 # Advanced Custom Fields: Flexible Content Preview
 
 Transforms ACF's flexible content field's layout list into a modal with image previews.
