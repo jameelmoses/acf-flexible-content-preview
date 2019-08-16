@@ -4,7 +4,6 @@ class Main {
 	use Singleton;
 
 	protected function init() {
-		add_action( 'init', [ $this, 'init_translations' ] );
 
 		// Assets
 		add_action( 'acf/input/admin_footer', [ $this, 'register_assets' ], 1 );
