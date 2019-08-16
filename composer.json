@@ -1,6 +1,6 @@
 {
   "name": "jameelmoses/acf-flexible-content-preview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Transforms ACF's flexible content field's layout list into a modal with image previews.",
   "keywords": [
     "ACF",
