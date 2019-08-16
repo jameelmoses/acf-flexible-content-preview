@@ -1,6 +1,6 @@
 <?php
 /*
- Plugin Name: Advanced Custom Fields: Flexible Content Preview
+ Plugin Name: Flexible Content Preview for Advanced Custom Fields
  Version: 1.0.0
  Plugin URI: https://github.com/jameelmoses/acf-flexible-content-preview
  Description: Transforms ACF's flexible content field's layout list into a modal with image previews.

@@ -1,4 +1,4 @@
-=== Advanced Custom Fields: Flexible Content Preview ===
+=== Flexible Content Preview for Advanced Custom Fields ===
 Contributors: jameelmoses
 Donate link: http://paypal.me/jameelmoses
 Tags: acf, advanced, custom, field, fields, addon, flexible, content, preview
@@ -56,13 +56,13 @@ This plugin works only if the [ACF Pro >= 5.7.O](https://www.advancedcustomfield
 From your WordPress dashboard
 
 1. **Visit** Plugins > Add New
-2. **Search** for "Advanced Custom Fields: Flexible Content Preview"
-3. **Activate** Advanced Custom Fields: Flexible Content Preview from your Plugins page
+2. **Search** for "Flexible Content Preview for Advanced Custom Fields"
+3. **Activate** Flexible Content Preview for Advanced Custom Fields from your Plugins page
 4. **Add images** to your theme in `THEME/lib/admin/images/acf-flexible-content-preview` or customize the path using `add_filter( 'acf-flexible-content-preview.images_path', $path );`
 
 == Screenshots ==
 
-1. See how Advanced Custom Fields: Flexible Content Preview improves the ACF flexible content field's layouts dropdown.
+1. See how Flexible Content Preview for Advanced Custom Fields improves the ACF flexible content field's layouts dropdown.
 
 == Changelog ==
 

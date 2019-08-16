@@ -1,4 +1,4 @@
-Advanced Custom Fields: Flexible Content Preview / Transforms ACF's flexible content field's layout list into a modal with image previews.
+Flexible Content Preview for Advanced Custom Fields / Transforms ACF's flexible content field's layout list into a modal with image previews.
 
 Copyright 2019 Jameel Moses and contributors
 
@@ -19,11 +19,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 This program incorporates work covered by the following copyright and
 permission notices:
 
-  Advanced Custom Fields: Flexible Content Preview / Transforms ACF's flexible content field's layout list into a modal with image previews.
+  Flexible Content Preview for Advanced Custom Fields / Transforms ACF's flexible content field's layout list into a modal with image previews.
 
   Copyright 2019 Jameel Moses and contributors
 
-  Advanced Custom Fields: Flexible Content Preview is released under the GPL
+  Flexible Content Preview for Advanced Custom Fields is released under the GPL
 
 
 ===============================================================================
@@ -706,6 +706,6 @@ Public License instead of this License.  But first, please read
 WRITTEN OFFER
 
 The source code for any program binaries or compressed scripts that are
-included with Advanced Custom Fields: Flexible Content Preview can be freely obtained at the following URL:
+included with Flexible Content Preview for Advanced Custom Fields can be freely obtained at the following URL:
 
     https://github.com/jameelmoses/acf-flexible-content-preview

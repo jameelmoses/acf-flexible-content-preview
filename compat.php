@@ -14,7 +14,7 @@ class Compatibility {
 			return;
 		}
 
-		trigger_error( sprintf( __( 'Advanced Custom Fields: Flexible Content Preview requires PHP version %s or greater to be activated.', 'acf-flexible-content-preview' ), FCP_MIN_PHP_VERSION ) );
+		trigger_error( sprintf( __( 'Flexible Content Preview for Advanced Custom Fields requires PHP version %s or greater to be activated.', 'acf-flexible-content-preview' ), FCP_MIN_PHP_VERSION ) );
 
 		// Deactive self
 		deactivate_plugins( FCP_DIR . 'acf-flexible-content-preview.php' );
@@ -29,7 +29,7 @@ class Compatibility {
 	 */
 	public static function admin_notices() {
 		echo '<div class="notice error is-dismissible">';
-		echo '<p>' . esc_html( sprintf( __( 'Advanced Custom Fields: Flexible Content Preview requires PHP version %s or greater to be activated. Your server is currently running PHP version %s.', 'acf-flexible-content-preview' ), FCP_MIN_PHP_VERSION, PHP_VERSION ) ) . '</p>';
+		echo '<p>' . esc_html( sprintf( __( 'Flexible Content Preview for Advanced Custom Fields requires PHP version %s or greater to be activated. Your server is currently running PHP version %s.', 'acf-flexible-content-preview' ), FCP_MIN_PHP_VERSION, PHP_VERSION ) ) . '</p>';
 		echo '</div>';
 	}
 }

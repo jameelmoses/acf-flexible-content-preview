@@ -1,6 +1,6 @@
 [![Banner](.wordpress.org/banner-1544x500.jpg)](#)
 
-# Advanced Custom Fields: Flexible Content Preview
+# Flexible Content Preview for Advanced Custom Fields
 
 Transforms ACF's flexible content field's layout list into a modal with image previews.
 
@@ -53,4 +53,4 @@ Credit largely goes to @BeAPI for their [bea-beautiful-flexible](https://github.
 
 ## License
 
-Advanced Custom Fields: Flexible Content Preview is licensed under the [GPLv3 or later](LICENSE.md).
+Flexible Content Preview for Advanced Custom Fields is licensed under the [GPLv3 or later](LICENSE.md).
