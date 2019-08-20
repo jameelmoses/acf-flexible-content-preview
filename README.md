@@ -13,7 +13,7 @@ Transforms ACF's flexible content field's layout list into a modal with image pr
 
 ## Image Location
 
-Images should be placed in your theme. Be fault, images are located here: `THEME/lib/admin/images/acf-flexible-content-preview`.
+Images should be placed in your theme. By default, images are located here: `THEME/lib/admin/images/acf-flexible-content-preview`.
 
 Also note that you can filter this path, but it **MUST** be in your theme:
 
