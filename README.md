@@ -47,10 +47,6 @@ Please refer to the [contributing guidelines](.github/CONTRIBUTING.md) to increa
 
 If you identify any errors or have an idea for improving the plugin, feel free to open an [issue](../../issues/new) or [create a pull request](../../compare). Please provide as much info as needed in order to help us resolving / approve your request.
 
-## Credit
-
-Credit largely goes to @BeAPI for their [bea-beautiful-flexible](https://github.com/BeAPI/bea-beautiful-flexible) plugin. This plugin began using their plugin as a starting point.
-
 ## License
 
 Flexible Content Preview for Advanced Custom Fields is licensed under the [GPLv3 or later](LICENSE.md).
