@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-const $ = require('gulp-load-plugins')();
 import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import del from 'del';
