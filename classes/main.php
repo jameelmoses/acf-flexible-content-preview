@@ -63,6 +63,19 @@ class Main {
 						}
 						$keys[ $layout_field['key'] ] = $layout_field['name'];
 					}
+
+          // One level of recursion to find child flexible content fields
+          $sub_fields = (array) acf_get_fields( $layout_field );
+          foreach( $sub_fields as $sub_field ) {
+            if( 'flexible_content' === $sub_field['type'] ) {
+              foreach( $sub_field['layouts'] as $layout_sub_field ) {
+                if ( ! empty( $keys [ $layout_sub_field['key'] ] ) ) {
+                  continue;
+                }
+                $keys[ $layout_sub_field['key'] ] = $layout_sub_field['name'];
+              }
+            }
+          }
 				}
 			}
 		}
