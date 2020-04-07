@@ -1,5 +1,8 @@
 # Changelog ##
 
+## 1.0.3 - 7 Apr 2020
+* Fixes a bug related to nested fields
+
 ## 1.0.2 - 6 Apr 2020
 * Supports nested flexible content fields
 * Updating dependencies
