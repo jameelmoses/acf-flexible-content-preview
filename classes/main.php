@@ -50,37 +50,39 @@ class Main {
 
 		foreach ( $groups as $group ) {
 			$fields = (array) acf_get_fields( $group );
-			if ( empty( $fields ) ) {
-				continue;
-			}
-
-			foreach ( $fields as $field ) {
-				if ( 'flexible_content' === $field['type'] ) {
-					// Flexible is recursive structure with sub_fields into layouts
-					foreach ( $field['layouts'] as $layout_field ) {
-						if ( ! empty( $keys [ $layout_field['key'] ] ) ) {
-							continue;
-						}
-						$keys[ $layout_field['key'] ] = $layout_field['name'];
-					}
-
-          // One level of recursion to find child flexible content fields
-          $sub_fields = (array) acf_get_fields( $layout_field );
-          foreach( $sub_fields as $sub_field ) {
-            if( 'flexible_content' === $sub_field['type'] ) {
-              foreach( $sub_field['layouts'] as $layout_sub_field ) {
-                if ( ! empty( $keys [ $layout_sub_field['key'] ] ) ) {
-                  continue;
-                }
-                $keys[ $layout_sub_field['key'] ] = $layout_sub_field['name'];
-              }
-            }
-          }
-				}
+			if ( !empty( $fields ) ) {
+				$this->retrieve_flexible_keys_from_fields($fields, $keys);
 			}
 		}
 
 		return $keys;
+	}
+
+	/**
+	 * Recursively get ACF flexible content field layout keys from fields.
+	 *
+	 * @param array $fields
+	 * @return array
+	 */
+	protected function retrieve_flexible_keys_from_fields( $fields, &$keys ) {
+		foreach ( $fields as $field ) {
+			if ( 'flexible_content' === $field['type'] ) {
+				foreach ( $field['layouts'] as $layout_field ) {
+					// Don't revisit keys we've recorded already
+					if ( !empty( $keys[$layout_field['key']] ) ) {
+						continue;
+					}
+
+					$keys[$layout_field['key']] = $layout_field['name'];
+
+					// Flexible content has a potentially recursive structure. Each layout
+					// has its own sub-fields that could in turn be flexible content.
+					if ( !empty( $layout_field['sub_fields'] ) ) {
+						$this->retrieve_flexible_keys_from_fields( $layout_field['sub_fields'], $keys );
+					}
+				}
+			}
+		}
 	}
 
 	/**
