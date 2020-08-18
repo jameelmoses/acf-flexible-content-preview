@@ -6,8 +6,8 @@ class Main {
 	protected function init() {
 
 		// Assets
-		add_action( 'acf/input/admin_footer', [ $this, 'register_assets' ], 1 );
-		add_action( 'acf/input/admin_footer', [ $this, 'enqueue_assets' ] );
+		add_action( 'admin_footer', [ $this, 'register_assets' ], 1 );
+		add_action( 'admin_footer', [ $this, 'enqueue_assets' ] );
 
 		// Images
 		add_action( 'acf/input/admin_footer', [ $this, 'layouts_images_style' ], 20 );
