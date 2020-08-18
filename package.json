@@ -1,7 +1,7 @@
 {
   "name": "acf-flexible-content-preview",
   "description": "Transforms ACF's flexible content field's layout list into a modal with image previews.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "gulpfile.babel.js",
   "keywords": [
     "ACF",
@@ -18,19 +18,22 @@
   ],
   "license": "GPL-3.0+",
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
-    "autoprefixer": "^9.7.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "autoprefixer": "^9.8.6",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.1.0"
   },
   "browserslist": [
     "last 2 Firefox major versions",
     "last 2 Safari major versions",
     "last 2 Edge major versions",
     "last 2 Chrome major versions"
-  ]
+  ],
+  "volta": {
+    "node": "12.18.3"
+  }
 }

@@ -1,5 +1,8 @@
 # Changelog ##
 
+## 1.0.4 - 18 Aug 2020
+* [Update hook for enqueuing and registering assets for ACF 5.9 compatibility.](https://github.com/jameelmoses/acf-flexible-content-preview/pull/10) Thanks @elliottpost!
+
 ## 1.0.3 - 7 Apr 2020
 * Fixes a bug related to nested fields
 
