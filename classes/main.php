@@ -8,8 +8,8 @@ class Main {
 	protected function init() {
 
 		// Assets
-		add_action( 'acf/enqueue_scripts', [ $this, 'register_assets' ], 1 );
-		add_action( 'acf/enqueue_scripts', [ $this, 'enqueue_assets' ] );
+		add_action( 'acf/input/admin_enqueue_scripts', [ $this, 'register_assets' ], 1 );
+		add_action( 'acf/input/admin_enqueue_scripts', [ $this, 'enqueue_assets' ] );
 
 		// Images
 		add_action( 'acf/input/admin_footer', [ $this, 'layouts_images_style' ], 20 );
@@ -149,7 +149,7 @@ class Main {
 	 * Register assets
 	 */
 	public function register_assets() {
-		wp_register_script( 'acf-flexible-content-preview', FCP_URL . 'assets/js/acf-flexible-content-preview.js', [ 'jquery' ], FCP_VERSION );
+		wp_register_script( 'acf-flexible-content-preview', FCP_URL . 'assets/js/acf-flexible-content-preview.js', [ 'jquery', 'acf-input' ], FCP_VERSION );
 		wp_register_style( 'acf-flexible-content-preview', FCP_URL . 'assets/css/acf-flexible-content-preview.css', [], FCP_VERSION );
 	}
 
