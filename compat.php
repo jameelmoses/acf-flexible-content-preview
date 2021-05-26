@@ -1,4 +1,7 @@
-<?php namespace FCP;
+<?php
+
+namespace FCP;
+
 class Compatibility {
 	/**
 	 * admin_init hook callback

@@ -4,8 +4,8 @@ Donate link: http://paypal.me/jameelmoses
 Tags: acf, advanced, custom, field, fields, addon, flexible, content, preview
 Requires at least: 4.7.0
 Requires PHP: 5.6
-Tested up to: 5.5
-Stable tag: 1.0.4
+Tested up to: 5.7.2
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: https://github.com/jameelmoses/acf-flexible-content-preview/blob/master/LICENSE.md
 
@@ -34,10 +34,6 @@ Additionally, you could filter all keys and/or images:
 
 `add_filter( 'acf-flexible-content-preview.images', $images );`
 
-= Credit =
-
-Credit largely goes to @BeAPI for their [bea-beautiful-flexible](https://github.com/BeAPI/bea-beautiful-flexible) plugin. This plugin began using their plugin as a starting point.
-
 = Issues & Feature Requests =
 
 If you identify any errors or have an idea for improving the plugin, feel free to open an [issue](https://github.com/jameelmoses/acf-flexible-content-preview/issues) or [create a pull request](https://github.com/jameelmoses/acf-flexible-content-preview/pulls). Please provide as much info as needed in order to help resolving or approve your request.
@@ -65,6 +61,11 @@ From your WordPress dashboard
 1. See how Flexible Content Preview for Advanced Custom Fields improves the ACF flexible content field's layouts dropdown.
 
 == Changelog ==
+
+= 1.0.5 =
+*Release Date - 26 May 2021*
+
+* preview image not displaying when block name starts with a number. Thanks @QueroBartK!
 
 = 1.0.4 =
 *Release Date - 18 Aug 2020*

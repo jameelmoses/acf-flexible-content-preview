@@ -1,5 +1,8 @@
 # Changelog ##
 
+## 1.0.5 - 26 May 2021
+* [preview image not displaying when block name starts with a number](https://github.com/jameelmoses/acf-flexible-content-preview/issues/11) Thanks @QueroBartK!
+
 ## 1.0.4 - 18 Aug 2020
 * [Update hook for enqueuing and registering assets for ACF 5.9 compatibility.](https://github.com/jameelmoses/acf-flexible-content-preview/pull/10) Thanks @elliottpost!
 

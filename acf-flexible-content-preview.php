@@ -1,7 +1,7 @@
 <?php
 /*
  Plugin Name: Flexible Content Preview for Advanced Custom Fields
- Version: 1.0.4
+ Version: 1.0.5
  Plugin URI: https://github.com/jameelmoses/acf-flexible-content-preview
  Description: Transforms ACF's flexible content field's layout list into a modal with image previews.
  Author: Jameel Moses
@@ -11,7 +11,7 @@
 
  ----
 
- Copyright 2019 Jameel Moses and contributors
+ Copyright 2021 Jameel Moses and contributors
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Plugin constants
-define( 'FCP_VERSION', '1.0.4' );
+define( 'FCP_VERSION', '1.0.5' );
 define( 'FCP_MIN_PHP_VERSION', '5.6' );
 
 // Plugin URL and PATH

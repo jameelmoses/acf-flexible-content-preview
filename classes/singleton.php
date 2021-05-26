@@ -1,4 +1,6 @@
-<?php namespace FCP;
+<?php
+
+namespace FCP;
 
 /**
  * Singleton base class for having singleton implementation
@@ -48,14 +50,12 @@ trait Singleton {
 	 *
 	 * @return void
 	 */
-	final private function __clone() {
-	}
+	final private function __clone() {}
 
 	/**
 	 * prevent from being unserialized
 	 *
 	 * @return void
 	 */
-	final private function __wakeup() {
-	}
+	final private function __wakeup() {}
 }

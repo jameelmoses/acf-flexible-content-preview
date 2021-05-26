@@ -1,5 +1,9 @@
 import gulp from 'gulp';
+
 import sass from 'gulp-sass';
+sass.compiler = require('sass');
+import Fiber from 'fibers';
+
 import postcss from 'gulp-postcss';
 import del from 'del';
 import autoprefixer from 'autoprefixer';
@@ -8,6 +12,7 @@ gulp.task('clean', () => del(['assets/css/acf-flexible-content-preview.css']));
 
 gulp.task('sass', () => gulp.src('assets/scss/acf-flexible-content-preview.scss')
   .pipe(sass({
+    fiber: Fiber,
     outputStyle: 'expanded',
     errLogToConsole: true
   }))
