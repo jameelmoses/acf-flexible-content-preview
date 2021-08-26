@@ -18,7 +18,7 @@ class Requirements {
 			return false;
 		}
 
-		if ( '5.6.0' > acf()->version ) {
+		if ( $this->version_compare( '5.6.0', acf()->version, '>' ) ) {
 			$this->display_error( __( 'Advanced Custom Fields should be on version 5.6.0 or above.', 'acf-flexible-content-preview' ) );
 			return false;
 		}
@@ -39,5 +39,13 @@ class Requirements {
 			deactivate_plugins( FCP_ACF_OPTIONS_MAIN_FILE_DIR );
 			unset( $_GET['activate'] );
 		} );
+	}
+
+	// Compare versions
+	private function version_compare( $ver1, $ver2, $operator = null ) {
+    $p = '#(\.0+)+($|-)#';
+    $ver1 = preg_replace( $p, '', $ver1 );
+    $ver2 = preg_replace( $p, '', $ver2 );
+    return isset( $operator ) ? version_compare( $ver1, $ver2, $operator ) : version_compare( $ver1, $ver2 );
 	}
 }

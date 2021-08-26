@@ -4,8 +4,8 @@ Donate link: http://paypal.me/jameelmoses
 Tags: acf, advanced, custom, field, fields, addon, flexible, content, preview
 Requires at least: 4.7.0
 Requires PHP: 5.6
-Tested up to: 5.7.2
-Stable tag: 1.0.5
+Tested up to: 5.8
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: https://github.com/jameelmoses/acf-flexible-content-preview/blob/master/LICENSE.md
 
@@ -61,6 +61,11 @@ From your WordPress dashboard
 1. See how Flexible Content Preview for Advanced Custom Fields improves the ACF flexible content field's layouts dropdown.
 
 == Changelog ==
+
+= 1.0.6 =
+*Release Date - 26 Aug 2021*
+
+* Fixing issue with ACF version compare since it doesn't follow PHP version constraints
 
 = 1.0.5 =
 *Release Date - 26 May 2021*

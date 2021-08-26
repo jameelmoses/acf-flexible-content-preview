@@ -1,5 +1,8 @@
 # Changelog ##
 
+## 1.0.6 - 26 Aug 2021
+* Fixing issue with ACF version compare since it doesn't follow PHP version constraints
+
 ## 1.0.5 - 26 May 2021
 * [preview image not displaying when block name starts with a number](https://github.com/jameelmoses/acf-flexible-content-preview/issues/11) Thanks @QueroBartK!
 

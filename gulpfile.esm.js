@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 
-import sass from 'gulp-sass';
-sass.compiler = require('sass');
+const sass = require('gulp-sass')(require('sass'));
 import Fiber from 'fibers';
 
 import postcss from 'gulp-postcss';
