@@ -6,7 +6,6 @@ class Main {
 	use Singleton;
 
 	protected function init() {
-
 		// Assets
 		add_action( 'acf/input/admin_enqueue_scripts', [ $this, 'register_assets' ], 1 );
 		add_action( 'acf/input/admin_enqueue_scripts', [ $this, 'enqueue_assets' ] );
@@ -66,7 +65,13 @@ class Main {
 	 */
 	protected function retrieve_flexible_keys_from_fields( $fields, &$keys ) {
 		foreach ( $fields as $field ) {
-			if ( 'flexible_content' === $field['type'] ) {
+			if ( 'repeater' === $field['type'] ) {
+				// If this is a repeater field, check to see if it
+				// contains any nested flexible content fields
+				$subFields = acf_get_fields($field);
+				$this->retrieve_flexible_keys_from_fields( $subFields, $keys );
+				
+			} elseif ( 'flexible_content' === $field['type'] ) {
 				foreach ( $field['layouts'] as $layout_field ) {
 					// Don't revisit keys we've recorded already
 					if ( ! empty( $keys[ $layout_field['key'] ] ) ) {
