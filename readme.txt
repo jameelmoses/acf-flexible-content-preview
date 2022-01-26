@@ -23,10 +23,17 @@ Transforms ACF's flexible content field's layout list into a modal with image pr
 = Image Location =
 
 Images should be placed in your theme. Be fault, images are located here: `THEME/lib/admin/images/acf-flexible-content-preview`.
+A file with name `default.jpg` can be placed here to overwrite the default grey image.
 
 Also note that you can filter this path, but it **MUST** be in your theme:
 
 `add_filter( 'acf-flexible-content-preview.images_path', $path );`
+
+You can also set a custom path for only the `default.jpg` image:
+
+`add_filter( 'acf-flexible-content-preview.default_path', $path );`
+
+Note that if you have already defined a custom images_path you can place your `default.jpg` at that location.
 
 **NOTE:** The path should not have a trailing beginning or trailing slash!
 
