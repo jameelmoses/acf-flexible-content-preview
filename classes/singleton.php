@@ -50,12 +50,12 @@ trait Singleton {
 	 *
 	 * @return void
 	 */
-	final private function __clone() {}
+	final public function __clone() {}
 
 	/**
 	 * prevent from being unserialized
 	 *
 	 * @return void
 	 */
-	final private function __wakeup() {}
+	final public function __wakeup() {}
 }
