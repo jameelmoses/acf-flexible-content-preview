@@ -34,7 +34,7 @@ trait Singleton {
 	/**
 	 * Constructor protected from the outside
 	 */
-	final private function __construct() {
+	private function __construct() {
 		$this->init();
 	}
 
@@ -57,5 +57,5 @@ trait Singleton {
 	 *
 	 * @return void
 	 */
-	final private function __wakeup() {}
+	private function __wakeup() {}
 }
