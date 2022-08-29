@@ -1,6 +1,4 @@
-[![Banner](.wordpress.org/banner-1544x500.jpg)](#)
-
-# Flexible Content Preview for Advanced Custom Fields
+# :no_entry: [DEPRECATED] Flexible Content Preview has become [Flexible Content Extended for Advanced Custom Fields](https://github.com/jameelmoses/acf-flexible-content-extended)
 
 Transforms ACF's flexible content field's layout list into a modal with image previews.
 
