@@ -142,6 +142,17 @@ class Main {
 			return $image_uri;
 		}
 
+		// Allow for setting custom "Default" image
+		$default_path = apply_filters( 'acf-flexible-content-preview.default_path', $path );
+
+		$default_image_path = get_stylesheet_directory() . '/' . $default_path . '/default.jpg';
+		$default_image_uri = get_stylesheet_directory_uri() . '/' . $default_path . '/default.jpg';
+
+		// Direct default path to custom folder
+		if ( is_file( $default_image_path ) ) {
+			return $default_image_uri;
+		}
+
 		return FCP_URL . 'assets/images/default.jpg';
 	}
 
